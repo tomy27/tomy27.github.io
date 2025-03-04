@@ -1,546 +1,1844 @@
-
-<!doctype html>
-<html class="h-100" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
   <head>
-      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.1">
-  <meta name="HandheldFriendly" content="true">
-  <title>Klar HTML Template - Frontpage one</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
 
-   <style>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-/* inter-300 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-/* inter-400 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
 
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+      <style>
+        /**
+          * Reinstate scrolling for non-JS clients
+          */
+        .simplebar-content-wrapper {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
 
-</style>
-
-
+    <!-- Page Title -->
+    <title>Flownine</title>
   </head>
+  <body class="">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Logo-->
+        <a class="navbar-brand d-flex align-items-center lh-1 me-10 transition-opacity opacity-75-hover" href="./index.html">
+          <span class="fw-bold text-body">flownine.</span>
+        </a>
+        <!-- / Logo-->
 
-  <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+        <!-- Mobile Menu Btn-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="ri-menu-line"></i>
+        </button>
+        <!-- /Mobile Menu Btn-->
 
-    <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
-  <div class="container">
-    <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-  </svg>
-  <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
-</a>
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+              <!-- Features dropdown menu-->
+              <div class="dropdown-menu dropdown-megamenu">
+                <div class="container">
+                  <!-- Dropdown Menu Links Section-->
+                  <div class="row py-lg-5 gx-8">
+                    <!-- menu row-->
+                    <div class="col-auto me-4 mb-4 me-lg-0 mb-lg-0 col-lg-4 d-flex align-items-start">
+                      <span class="f-w-16 d-block text-primary me-4 d-none d-lg-flex">
+                        <svg
+                          class="w-100"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <circle cx="18" cy="18" r="3"></circle>
+                          <circle cx="6" cy="6" r="3"></circle>
+                          <path opacity=".4" d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                          <line opacity=".4" x1="6" y1="9" x2="6" y2="21"></line>
+                        </svg>
+                      </span>
+                      <div class="position-relative">
+                        <h6 class="dropdown-heading">Automation</h6>
+                        <p class="text-muted">Automate tasks, workflows or entire part of your business.</p>
+                        <a href="#services" class="fw-medium fs-7 text-decoration-none link-cover">Read more &rarr;</a>
+                      </div>
+                    </div>
+                    <!-- /menu row-->
 
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-      <li class="nav-item">
-  <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
-    Home
-  </a>
-</li>
-<li class="nav-item">
-  <a class="nav-link fs-5" href="content.html" aria-label="A sample content page">
-    Content
-  </a>
-</li>
-<li class="nav-item">
-  <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
-    System
-  </a>
-</li>
+                    <!-- menu row-->
+                    <div class="col-auto me-4 mb-4 me-lg-0 mb-lg-0 col-lg-4 d-flex align-items-start">
+                      <span class="f-w-16 d-block text-primary me-4 d-none d-lg-flex">
+                        <svg
+                          class="w-100"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                          <rect opacity=".3" x="9" y="9" width="6" height="6"></rect>
+                          <line x1="9" y1="1" x2="9" y2="4"></line>
+                          <line x1="15" y1="1" x2="15" y2="4"></line>
+                          <line x1="9" y1="20" x2="9" y2="23"></line>
+                          <line x1="15" y1="20" x2="15" y2="23"></line>
+                          <line x1="20" y1="9" x2="23" y2="9"></line>
+                          <line x1="20" y1="14" x2="23" y2="14"></line>
+                          <line x1="1" y1="9" x2="4" y2="9"></line>
+                          <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                      </span>
+                      <div class="position-relative">
+                        <h6 class="dropdown-heading">AI</h6>
+                        <p class="text-muted">Acts, thinks and executes like a human. The true powerhouse.</p>
+                        <a href="#services" class="fw-medium fs-7 text-decoration-none link-cover">Read more &rarr;</a>
+                      </div>
+                    </div>
+                    <!-- /menu row-->
 
-    </ul>
-      <a href="https://templatedeck.com/klar-html-template.html" aria-label="Download this template" class="btn btn-outline-light">
-        <small>Download Template</small>
-      </a>
-</div>
-</nav>
+                    <!-- menu row-->
+                    <div class="col-auto me-4 mb-4 me-lg-0 mb-lg-0 col-lg-4 d-flex align-items-start">
+                      <span class="f-w-16 d-block text-primary me-4 d-none d-lg-flex">
+                        <svg
+                          class="w-100"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                          <polyline points="2 17 12 22 22 17"></polyline>
+                          <polyline opacity=".4" points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                      </span>
+                      <div class="position-relative">
+                        <h6 class="dropdown-heading">Software Development</h6>
+                        <p class="text-muted">No-code not enough? Custom software delivers exactly what you need—built for your unique challenges.</p>
+                        <a href="#services" class="fw-medium fs-7 text-decoration-none link-cover">Read more &rarr;</a>
+                      </div>
+                    </div>
+                    <!-- /menu row-->
+                  </div>
 
-    <main>
-      <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
-  <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
-  <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
-  <div class="row d-flex align-items-center justify-content-center py-vh-5">
-    <div class="col-12 col-xl-10">
-      <span class="h5 text-secondary fw-lighter">Our Mission</span>
-      <h1 class="display-huge mt-3 mb-3 lh-1">We do ordinary stuff for cool people</h1>
-    </div>
-    <div class="col-12 col-xl-8">
-      <p class="lead text-secondary">We are some sort of DAO working with AI, NFT´s, web 4.0 and the so called blockchain...in the Metaverse. You don´t understand a word? No problem, we neither!</p>
-    </div>
-    <div class="col-12 text-center">
-      <a href="#" class="btn btn-xl btn-light">Join us
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-</a>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
-  <div class="container-fluid px-vw-5">
-    <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
-    <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
-      <div class="col-12 col-lg-6">
-        <img src="img/webp/abstract18.webp" width="2280" height="1732" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <img src="img/webp/abstract9.webp" width="1116" height="848" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="3000">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-dark">
-  <div class="container px-vw-5 py-vh-5">
-    <div class="row d-flex align-items-center">
-      <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-        <span class="h5 text-secondary fw-lighter">What we do</span>
-        <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
-      </div>
-      <div class="col-12 col-lg-5" data-aos="fade-left">
-        <h3 class="pt-5">Product Design & Strategy</h3>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
-          <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-</svg>
-</p>
-        <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
-          <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-</svg>
-</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-black py-vh-3">
-  <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-
-  <div class="row gx-5">
-    <div class="col-12 col-md-6">
-      <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+                  <!-- Latest from the blog-->
+                  <div class="mt-4 border-top d-none d-lg-flex flex-column py-5">
+                    <p class="text-muted">From the blog</p>
+                    <a
+                      href="https://medium.com/@tamas.kereszturi1/essentials-of-managing-software-development-enhancing-collaboration-between-pms-and-developers-e6fae6005e20"
+                      target="_blank"
+                      >Essentials of Managing Software Development: Enhancing Collaboration Between PMs and Developers &rarr;</a
+                    >
+                    <a href="https://medium.com/@tamas.kereszturi1/mastering-the-basics-of-business-process-automation-the-first-steps-d3d7e8b76abd" target="_blank"
+                      >Mastering the Basics of Business Process Automation: The First Steps &rarr;</a
+                    >
+                    <a href="https://medium.com/@tamas.kereszturi1/pursuing-simplicity-in-software-development-93cac5f8b250" target="_blank"
+                      >Pursuing Simplicity in Software Development &rarr;</a
+                    >
+                  </div>
+                  <!-- / Latest from the blog-->
+                  <!-- /Dropdown Menu Links Section-->
+                </div>
+              </div>
+              <!-- / Features dropdown menu-->
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#benefits">Benefits</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-flex align-items-center">
+            <a href="https://www.linkedin.com/in/tamaskereszturi/" target="_blank" class="text-dark text-decoration-none opacity-50-hover transition-opacity px-3"><i class="ri-linkedin-line ri-lg"></i></a>
+            <a href="#contact" class="btn btn-primary ms-2" role="button">Contact</a>
           </div>
         </div>
       </div>
+    </nav>
+    <!-- / Navbar-->
 
-      <div class="card bg-transparent" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract2.webp" width="582" height="442" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+    <!-- Main Section-->
+    <main class="mt-0">
+      <!-- Page Content Goes Here -->
+
+      <!-- Hero Content-->
+      <div class="container pt-4 pt-md-6 pt-lg-8 pb-8 pb-lg-10 position-relative">
+        <div class="row gx-10 align-items-center">
+          <!-- Hero Text-->
+          <div class="col-12 col-lg-6 position-relative z-index-20 text-center text-lg-start" data-aos="fade-in">
+            <h1 class="display-3 fw-bold mb-4">Work Less. Achieve More.</h1>
+            <h2 class="fs-5 text-muted fw-light lh-base">
+              Stop wasting hours on repetitive tasks. At flownine, we automate workflows, infuse technology into your business to help you focus on what truly matters—growing your
+              business.
+            </h2>
+
+            <div class="mt-4 pt-1 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+              <a href="#contact" class="btn btn-success" role="button">I want this</a>
+              <a href="#services" class="btn btn-link text-decoration-none text-muted ms-2 bg-light-hover" role="button">How can we help</a>
+            </div>
+            <ul class="list-unstyled d-none d-md-flex align-items-center small text-muted mt-3 pt-1 fw-medium fs-9 justify-content-center justify-content-lg-start">
+              <li class="me-4 d-flex align-items-center"><i class="ri-checkbox-circle-fill text-success ri-lg me-1"></i> Real value</li>
+              <li class="me-4 d-flex align-items-center"><i class="ri-checkbox-circle-fill text-success ri-lg me-1"></i> Happy customers</li>
+              <li class="me-4 d-flex align-items-center"><i class="ri-checkbox-circle-fill text-success ri-lg me-1"></i> No credit card required 😉</li>
+            </ul>
+          </div>
+          <!-- / Hero Text-->
+
+          <!-- Hero Graphic-->
+          <div class="col-12 col-lg-6 mt-5 mt-lg-0 align-self-stretch position-relative z-index-20" data-aos="fade-in">
+            <div class="d-flex h-100 rounded-3 overflow-hidden">
+              <div class="d-flex justify-content-center align-items-center" style="min-height: 280px">
+                <video width="100%" height="100%" autoplay loop muted playsinline class="rounded-3">
+                  <source src="./assets/videos/hero_vid.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <!-- / Hero Graphic-->
+        </div>
+
+        <!-- Bottom left shapes-->
+        <div class="position-absolute top-0 end-0 start-0 bottom-0 z-index-0 d-none d-lg-block">
+          <div class="d-block f-w-6 position-absolute bottom-7 start-5 rotate-n45 origin-center">
+            <span class="d-block animation-float-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.51 89.72">
+                <path
+                  class="text-body"
+                  d="M14.75,46.11C14.75,53,2.5,51.83,2.5,60.64"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+                <path
+                  class="text-body"
+                  d="M14.75,17C14.75,24,2.5,22.75,2.5,31.57"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+                <path
+                  class="text-body"
+                  d="M14.75,46.11c0-6.91-12.25-5.72-12.25-14.54"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+                <path
+                  class="text-body"
+                  d="M14.75,17C14.75,10.13,2.5,11.32,2.5,2.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+                <path class="text-secondary" d="M37,75.18c0,6.91-12.25,5.72-12.25,14.54" fill="none" stroke="currentColor" stroke-miterlimit="10" />
+                <path class="text-secondary" d="M37,46.11C37,53,24.76,51.83,24.76,60.64" fill="none" stroke="currentColor" stroke-miterlimit="10" />
+                <path class="text-secondary" d="M37,75.18c0-6.91-12.25-5.72-12.25-14.54" fill="none" stroke="currentColor" stroke-miterlimit="10" />
+                <path class="text-secondary" d="M37,46.11c0-6.91-12.25-5.72-12.25-14.54" fill="none" stroke="currentColor" stroke-miterlimit="10" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="d-block f-w-6 position-absolute bottom-35 start-n3">
+            <span class="d-block animation-float-6">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.95 50.74">
+                <path
+                  class="text-secondary"
+                  d="M55.45,34.33A15.92,15.92,0,1,1,39.54,18.41,15.91,15.91,0,0,1,55.45,34.33Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10" />
+                <path
+                  class="text-body"
+                  d="M34.33,18.41A15.92,15.92,0,1,1,18.41,2.5,15.92,15.92,0,0,1,34.33,18.41Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="d-block f-w-6 position-absolute bottom-20 start-n2">
+            <span class="d-block animation-float">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.66 58.68">
+                <polygon
+                  class="text-body"
+                  points="20.69 33.95 38.85 23.45 20.68 12.98 2.5 2.5 2.52 23.47 2.53 44.45 20.69 33.95"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5" />
+                <polygon
+                  class="text-secondary"
+                  points="43.5 47.31 61.66 36.81 43.49 26.34 25.32 15.86 25.33 36.83 25.34 57.81 43.5 47.31"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <!-- / Bottom left shapes-->
+      </div>
+      <!-- /hero Content-->
+
+      <!-- Logo Showcase-->
+      <div class="bg-primary py-8" data-aos="fade-in">
+        <p class="mb-0 text-center small fw-bolder tracking-wider text-uppercase text-white opacity-75">
+            We work with leading technologies & industries
+        </p>
+        <div class="mt-5">
+            <section class="marquee marquee-hover-pause">
+              <div class="marquee-body">
+                <div class="marquee-section animation-marquee-90">
+                    
+                    <!-- Tech Stack -->
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/python.svg" alt="Python" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/django.svg" alt="Django" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/javascript.svg" alt="OpenAI" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/aws.svg" alt="AWS" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/digitalocean.svg" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/make.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/zapier.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/python.svg" alt="Python" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/django.svg" alt="Django" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/javascript.svg" alt="OpenAI" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/aws.svg" alt="AWS" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/digitalocean.svg" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/make.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/zapier.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="marquee-section animation-marquee-90">
+                    
+                    <!-- Tech Stack -->
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/python.svg" alt="Python" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/django.svg" alt="Django" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/javascript.svg" alt="OpenAI" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/aws.svg" alt="AWS" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/digitalocean.svg" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/make.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/zapier.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/python.svg" alt="Python" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/django.svg" alt="Django" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/javascript.svg" alt="OpenAI" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/aws.svg" alt="AWS" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid w-50 d-table mx-auto" src="./assets/images/logos/digitalocean.svg" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/make.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                    <div class="mx-5 f-w-24">
+                        <picture>
+                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/zapier.webp" alt="Bootstrap" />
+                        </picture>
+                    </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </div>
+      <!-- Logo Showcase-->
+
+      <!-- Benefits-->
+      <div class="bg-dark py-8" data-aos="fade-in" id="benefits">
+        <div class="container py-4">
+          <p class="mb-0 text-center small fw-bolder tracking-wider text-uppercase text-orange">Benefits</p>
+          <h3 class="text-white text-center mt-3 fs-1 mb-3 fw-bold">These benefits are waiting for you.</h3>
+          <p class="text-white opacity-50 text-center">You should work on your business, not in your business.</p>
+
+          <div class="row gx-10 gy-7 mt-4">
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="000">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/time_tracking.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">Get your time back</p>
+              <p class="text-white opacity-75 text-center fs-7">You can be freed up from tedious, repetitive tasks, but the control stays in your hand. How cool is that?</p>
+            </div>
+            <!-- /Integration-->
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/diamond.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">Revenue Growth</p>
+              <p class="text-white opacity-75 text-center fs-7">
+                Sales and marketing can be tricky, but AI and automation can handle most of it for you. You just watch it happen.
+              </p>
+            </div>
+            <!-- /Integration-->
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/speech.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">No nonsense, no BS</p>
+              <p class="text-white opacity-75 text-center fs-7">We never let you feel lost or overwhelmed by the solution. Only the needed thing only at the right time.</p>
+            </div>
+            <!-- /Integration-->
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/light.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">Clarity</p>
+              <p class="text-white opacity-75 text-center fs-7">You will better understand your business.</p>
+            </div>
+            <!-- /Integration-->
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="400">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/charge.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">Supercharge</p>
+              <p class="text-white opacity-75 text-center fs-7">If you've ever thought, 'There has to be a better way'— well, there is. And it's just one click away.</p>
+            </div>
+            <!-- /Integration-->
+            <!-- Integration-->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">
+              <picture class="d-block f-h-10">
+                <img class="h-100 w-auto" src="./assets/images/icons/machine.svg" alt="" />
+              </picture>
+              <p class="text-white fs-4 fw-medium mb-2 mt-3">You name it, we build it.</p>
+              <p class="text-white opacity-75 text-center fs-7">At an affordable cost.</p>
+            </div>
+            <!-- /Integration-->
+          </div>
+
+          <a href="#contact" class="btn btn-white d-table mx-auto mt-7 w-100 w-md-auto" role="button">I want this</a>
+        </div>
+      </div>
+      <!-- / Benefits-->
+
+      <!-- Methods-->
+      <div class="py-5 py-lg-10" id="methods">
+        <!-- Highlight One-->
+        <div class="container py-5 py-lg-8">
+          <div class="row g-5 g-lg-10 d-flex align-items-center">
+            <!-- Highlight One Image Section-->
+            <div class="col-12 col-md-6 col-xl-5 offset-xl-1 position-relative" data-aos="fade-in">
+              <picture class="position-relative z-index-20">
+                <img class="img-fluid rounded-5" src="./assets/images/feature-1.jpeg" alt="HTML Bootstrap Template by Pixel Rocket" />
+              </picture>
+              <div class="position-absolute bottom-5 end-0 z-index-30 d-none d-lg-block">
+                <div class="p-3 bg-white shadow-lg rounded-3 f-w-60 mb-3 d-flex align-items-center me-0 ms-auto" data-aos="fade-right" data-aos-duration="400" data-aos-delay="450">
+                  <div class="position-relative me-4">
+                    <picture class="position-relative z-index-0">
+                      <img class="f-w-12 rounded-circle" src="./assets/images/profile-small-2.jpeg" alt="HTML Bootstrap Template by Pixel Rocket" />
+                    </picture>
+                    <span class="position-absolute z-index-20 d-block f-w-3 f-h-3 border border-3 border-white bg-success rounded-circle bottom-0 end-8"></span>
+                  </div>
+                  <div class="lh-sm">
+                    <small class="align-self-center fs-8">I like it. 👍 Can we try a different shade of orange for the nav? </small>
+                    <span class="fs-9 text-muted fw-medium mt-1 d-block">12 mins ago</span>
+                  </div>
+                </div>
+                <div class="p-3 bg-white shadow-lg rounded-3 f-w-56 mb-3 d-flex align-items-center me-0 ms-auto" data-aos="fade-left" data-aos-duration="400" data-aos-delay="1500">
+                  <div class="position-relative me-4">
+                    <picture class="position-relative z-index-0">
+                      <img class="f-w-12 rounded-circle" src="./assets/images/profile-small-3.jpeg" alt="HTML Bootstrap Template by Pixel Rocket" />
+                    </picture>
+                    <span class="position-absolute z-index-20 d-block f-w-3 f-h-3 border border-3 border-white bg-danger rounded-circle bottom-0 end-8"></span>
+                  </div>
+                  <div class="lh-1">
+                    <small class="align-self-center fs-8 lh-sm">Orange updated in header and footer.</small>
+                    <span class="fs-9 text-muted fw-medium mt-1 d-block">5 mins ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hightlight One SVG Shape-->
+              <div class="d-none d-xl-block f-w-60 position-absolute top-n13 start-n3 opacity-75">
+                <span class="d-block" data-aos="fade-in">
+                  <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.39 411.39">
+                    <circle cx="355.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="105.89" r="2.5" fill="none" />
+                    <path d="M5.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,5.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,5.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,61.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,61.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,53.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,161.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,161.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,153.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,261.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,261.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,253.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,361.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,361.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,353.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,105.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,105.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,205.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,205.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,305.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,305.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,405.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,405.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,208.39Z" />
+                    <path d="M305.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,408.39Z" fill="#bcbcbc" />
+                    <rect x="152.24" y="100.37" width="3" height="4.75" transform="translate(-27.62 138.8) rotate(-45)" />
+                    <rect x="157.72" y="105.84" width="3" height="4.75" transform="translate(-29.89 144.28) rotate(-45)" />
+                    <rect x="151.37" y="106.72" width="4.75" height="3" transform="translate(-31.49 140.41) rotate(-45)" />
+                    <rect x="156.84" y="101.24" width="4.75" height="3" transform="translate(-26.02 142.67) rotate(-45)" />
+                    <rect x="154.98" y="103.98" width="3" height="3" transform="translate(-28.75 141.54) rotate(-45)" />
+                    <rect x="256.72" y="105.84" width="3" height="4.75" transform="translate(-0.89 214.28) rotate(-45)" />
+                    <rect x="251.24" y="100.37" width="3" height="4.75" transform="translate(1.38 208.8) rotate(-45)" />
+                    <rect x="255.84" y="101.24" width="4.75" height="3" transform="translate(2.98 212.68) rotate(-45)" />
+                    <rect x="250.37" y="106.72" width="4.75" height="3" transform="translate(-2.5 210.4) rotate(-45)" />
+                    <rect x="253.98" y="103.98" width="3" height="3" transform="translate(0.25 211.55) rotate(-45)" />
+                    <rect x="355.72" y="105.84" width="3" height="4.75" transform="translate(28.11 284.29) rotate(-45)" />
+                    <rect x="350.24" y="100.37" width="3" height="4.75" transform="translate(30.37 278.81) rotate(-45)" />
+                    <rect x="354.84" y="101.24" width="4.75" height="3" transform="translate(31.98 282.68) rotate(-45)" />
+                    <rect x="349.37" y="106.72" width="4.75" height="3" transform="translate(26.5 280.4) rotate(-45)" />
+                    <rect x="352.98" y="103.98" width="3" height="3" transform="translate(29.24 281.55) rotate(-45)" />
+                    <rect x="51.24" y="100.37" width="3" height="4.75" transform="translate(-57.2 67.38) rotate(-45)" />
+                    <rect x="56.72" y="105.84" width="3" height="4.75" transform="translate(-59.47 72.86) rotate(-45)" />
+                    <rect x="55.84" y="101.24" width="4.75" height="3" transform="translate(-55.6 71.26) rotate(-45)" />
+                    <rect x="50.37" y="106.72" width="4.75" height="3" transform="translate(-61.07 68.98) rotate(-45)" />
+                    <rect x="53.98" y="103.98" width="3" height="3" transform="translate(-58.34 70.12) rotate(-45)" />
+                    <rect x="152.24" y="0.37" width="3" height="4.75" transform="translate(43.09 109.51) rotate(-45)" />
+                    <rect x="157.72" y="5.84" width="3" height="4.75" transform="translate(40.82 114.99) rotate(-45)" />
+                    <rect x="156.84" y="1.24" width="4.75" height="3" transform="translate(44.7 113.38) rotate(-45)" />
+                    <rect x="151.37" y="6.72" width="4.75" height="3" transform="translate(39.22 111.11) rotate(-45)" />
+                    <rect x="154.98" y="3.98" width="3" height="3" transform="translate(41.96 112.25) rotate(-45)" />
+                    <rect x="251.24" y="0.37" width="3" height="4.75" transform="translate(72.09 179.52) rotate(-45)" />
+                    <rect x="256.72" y="5.84" width="3" height="4.75" transform="translate(69.82 184.99) rotate(-45)" />
+                    <rect x="250.37" y="6.72" width="4.75" height="3" transform="translate(68.21 181.11) rotate(-45)" />
+                    <rect x="255.84" y="1.24" width="4.75" height="3" transform="translate(73.69 183.39) rotate(-45)" />
+                    <rect x="253.98" y="3.98" width="3" height="3" transform="translate(70.96 182.26) rotate(-45)" />
+                    <rect x="350.24" y="0.37" width="3" height="4.75" transform="translate(101.09 249.52) rotate(-45)" />
+                    <rect x="355.72" y="5.84" width="3" height="4.75" transform="translate(98.82 255) rotate(-45)" />
+                    <rect x="349.37" y="6.72" width="4.75" height="3" transform="translate(97.21 251.12) rotate(-45)" />
+                    <rect x="354.84" y="1.24" width="4.75" height="3" transform="translate(102.69 253.39) rotate(-45)" />
+                    <rect x="352.98" y="3.98" width="3" height="3" transform="translate(99.96 252.26) rotate(-45)" />
+                    <rect x="1.24" y="50.37" width="3" height="4.75" transform="translate(-36.49 17.38) rotate(-45)" />
+                    <rect x="6.72" y="55.84" width="3" height="4.75" transform="translate(-38.76 22.86) rotate(-45)" />
+                    <rect x="0.37" y="56.72" width="4.75" height="3" transform="translate(-40.36 18.99) rotate(-45)" />
+                    <rect x="5.84" y="51.24" width="4.75" height="3" transform="translate(-34.89 21.26) rotate(-45)" />
+                    <rect x="3.98" y="53.98" width="3" height="3" transform="translate(-37.62 20.12) rotate(-45)" />
+                    <rect x="101.24" y="50.37" width="3" height="4.75" transform="translate(-7.2 88.09) rotate(-45)" />
+                    <rect x="106.72" y="55.84" width="3" height="4.75" transform="translate(-9.47 93.57) rotate(-45)" />
+                    <rect x="105.84" y="51.24" width="4.75" height="3" transform="translate(-5.6 91.97) rotate(-45)" />
+                    <rect x="100.37" y="56.72" width="4.75" height="3" transform="translate(-11.07 89.69) rotate(-45)" />
+                    <rect x="103.98" y="53.98" width="3" height="3" transform="translate(-8.33 90.84) rotate(-45)" />
+                    <rect x="206.72" y="55.84" width="3" height="4.75" transform="translate(19.82 164.28) rotate(-45)" />
+                    <rect x="201.24" y="50.37" width="3" height="4.75" transform="translate(22.09 158.8) rotate(-45)" />
+                    <rect x="200.37" y="56.72" width="4.75" height="3" transform="translate(18.21 160.4) rotate(-45)" />
+                    <rect x="205.84" y="51.24" width="4.75" height="3" transform="translate(23.69 162.68) rotate(-45)" />
+                    <rect x="203.98" y="53.98" width="3" height="3" transform="translate(20.96 161.55) rotate(-45)" />
+                    <rect x="301.24" y="50.37" width="3" height="4.75" transform="translate(51.38 229.52) rotate(-45)" />
+                    <rect x="306.72" y="55.84" width="3" height="4.75" transform="translate(49.11 234.99) rotate(-45)" />
+                    <rect x="300.37" y="56.72" width="4.75" height="3" transform="translate(47.5 231.11) rotate(-45)" />
+                    <rect x="305.84" y="51.24" width="4.75" height="3" transform="translate(52.98 233.39) rotate(-45)" />
+                    <rect x="303.98" y="53.98" width="3" height="3" transform="translate(50.25 232.26) rotate(-45)" />
+                    <rect x="406.72" y="55.84" width="3" height="4.75" transform="translate(78.4 305.7) rotate(-45)" />
+                    <rect x="401.24" y="50.37" width="3" height="4.75" transform="translate(80.67 300.23) rotate(-45)" />
+                    <rect x="400.37" y="56.72" width="4.75" height="3" transform="translate(76.79 301.82) rotate(-45)" />
+                    <rect x="405.84" y="51.24" width="4.75" height="3" transform="translate(82.27 304.1) rotate(-45)" />
+                    <rect x="403.98" y="53.98" width="3" height="3" transform="translate(79.54 302.97) rotate(-45)" />
+                    <rect x="1.24" y="150.37" width="3" height="4.75" transform="translate(-107.2 46.67) rotate(-45)" />
+                    <rect x="6.72" y="155.84" width="3" height="4.75" transform="translate(-109.47 52.15) rotate(-45)" />
+                    <rect x="0.37" y="156.72" width="4.75" height="3" transform="translate(-111.07 48.27) rotate(-45)" />
+                    <rect x="5.84" y="151.24" width="4.75" height="3" transform="translate(-105.6 50.55) rotate(-45)" />
+                    <rect x="3.98" y="153.98" width="3" height="3" transform="translate(-108.34 49.41) rotate(-45)" />
+                    <rect x="101.24" y="150.37" width="3" height="4.75" transform="translate(-77.91 117.38) rotate(-45)" />
+                    <rect x="106.72" y="155.84" width="3" height="4.75" transform="translate(-80.18 122.86) rotate(-45)" />
+                    <rect x="100.37" y="156.72" width="4.75" height="3" transform="translate(-81.78 118.98) rotate(-45)" />
+                    <rect x="105.84" y="151.24" width="4.75" height="3" transform="translate(-76.31 121.26) rotate(-45)" />
+                    <rect x="103.98" y="153.98" width="3" height="3" transform="translate(-79.05 120.13) rotate(-45)" />
+                    <rect x="206.72" y="155.84" width="3" height="4.75" transform="translate(-50.89 193.57) rotate(-45)" />
+                    <rect x="201.24" y="150.37" width="3" height="4.75" transform="translate(-48.62 188.09) rotate(-45)" />
+                    <rect x="200.37" y="156.72" width="4.75" height="3" transform="translate(-52.5 189.69) rotate(-45)" />
+                    <rect x="205.84" y="151.24" width="4.75" height="3" transform="translate(-47.02 191.97) rotate(-45)" />
+                    <rect x="203.98" y="153.98" width="3" height="3" transform="translate(-49.76 190.84) rotate(-45)" />
+                    <rect x="306.72" y="155.84" width="3" height="4.75" transform="translate(-21.6 264.28) rotate(-45)" />
+                    <rect x="301.24" y="150.37" width="3" height="4.75" transform="translate(-19.33 258.8) rotate(-45)" />
+                    <rect x="305.84" y="151.24" width="4.75" height="3" transform="translate(-17.73 262.68) rotate(-45)" />
+                    <rect x="300.37" y="156.72" width="4.75" height="3" transform="translate(-23.21 260.4) rotate(-45)" />
+                    <rect x="303.98" y="153.98" width="3" height="3" transform="translate(-20.46 261.55) rotate(-45)" />
+                    <rect x="406.72" y="155.84" width="3" height="4.75" transform="translate(7.69 334.99) rotate(-45)" />
+                    <rect x="401.24" y="150.37" width="3" height="4.75" transform="translate(9.96 329.52) rotate(-45)" />
+                    <rect x="400.37" y="156.72" width="4.75" height="3" transform="translate(6.08 331.11) rotate(-45)" />
+                    <rect x="405.84" y="151.24" width="4.75" height="3" transform="translate(11.56 333.39) rotate(-45)" />
+                    <rect x="403.98" y="153.98" width="3" height="3" transform="translate(8.83 332.26) rotate(-45)" />
+                    <rect x="1.24" y="250.37" width="3" height="4.75" transform="translate(-177.91 75.96) rotate(-45)" />
+                    <rect x="6.72" y="255.84" width="3" height="4.75" transform="translate(-180.18 81.44) rotate(-45)" />
+                    <rect x="5.84" y="251.24" width="4.75" height="3" transform="translate(-176.31 79.83) rotate(-45)" />
+                    <rect x="0.37" y="256.72" width="4.75" height="3" transform="translate(-181.78 77.56) rotate(-45)" />
+                    <rect x="3.98" y="253.98" width="3" height="3" transform="translate(-179.05 78.7) rotate(-45)" />
+                    <rect x="101.24" y="250.37" width="3" height="4.75" transform="translate(-148.62 146.67) rotate(-45)" />
+                    <rect x="106.72" y="255.84" width="3" height="4.75" transform="translate(-150.89 152.15) rotate(-45)" />
+                    <rect x="105.84" y="251.24" width="4.75" height="3" transform="translate(-147.02 150.55) rotate(-45)" />
+                    <rect x="100.37" y="256.72" width="4.75" height="3" transform="translate(-152.49 148.27) rotate(-45)" />
+                    <rect x="103.98" y="253.98" width="3" height="3" transform="translate(-149.76 149.42) rotate(-45)" />
+                    <rect x="201.24" y="250.37" width="3" height="4.75" transform="translate(-119.33 217.38) rotate(-45)" />
+                    <rect x="206.72" y="255.84" width="3" height="4.75" transform="translate(-121.6 222.86) rotate(-45)" />
+                    <rect x="200.37" y="256.72" width="4.75" height="3" transform="translate(-123.2 218.98) rotate(-45)" />
+                    <rect x="205.84" y="251.24" width="4.75" height="3" transform="translate(-117.73 221.26) rotate(-45)" />
+                    <rect x="203.98" y="253.98" width="3" height="3" transform="translate(-120.47 220.13) rotate(-45)" />
+                    <rect x="301.24" y="250.37" width="3" height="4.75" transform="translate(-90.04 288.09) rotate(-45)" />
+                    <rect x="306.72" y="255.84" width="3" height="4.75" transform="translate(-92.31 293.57) rotate(-45)" />
+                    <rect x="305.84" y="251.24" width="4.75" height="3" transform="translate(-88.44 291.97) rotate(-45)" />
+                    <rect x="300.37" y="256.72" width="4.75" height="3" transform="translate(-93.92 289.69) rotate(-45)" />
+                    <rect x="303.98" y="253.98" width="3" height="3" transform="translate(-91.18 290.84) rotate(-45)" />
+                    <rect x="401.24" y="250.37" width="3" height="4.75" transform="translate(-60.75 358.8) rotate(-45)" />
+                    <rect x="406.72" y="255.84" width="3" height="4.75" transform="translate(-63.02 364.28) rotate(-45)" />
+                    <rect x="400.37" y="256.72" width="4.75" height="3" transform="translate(-64.63 360.39) rotate(-45)" />
+                    <rect x="405.84" y="251.24" width="4.75" height="3" transform="translate(-59.15 362.68) rotate(-45)" />
+                    <rect x="403.98" y="253.98" width="3" height="3" transform="translate(-61.89 361.55) rotate(-45)" />
+                    <rect x="6.72" y="355.84" width="3" height="4.75" transform="translate(-250.89 110.73) rotate(-45)" />
+                    <rect x="1.24" y="350.37" width="3" height="4.75" transform="translate(-248.62 105.25) rotate(-45)" />
+                    <rect x="0.37" y="356.72" width="4.75" height="3" transform="translate(-252.49 106.85) rotate(-45)" />
+                    <rect x="5.84" y="351.24" width="4.75" height="3" transform="translate(-247.02 109.12) rotate(-45)" />
+                    <rect x="3.98" y="353.98" width="3" height="3" transform="translate(-249.76 108) rotate(-45)" />
+                    <rect x="106.72" y="355.84" width="3" height="4.75" transform="translate(-221.6 181.44) rotate(-45)" />
+                    <rect x="101.24" y="350.37" width="3" height="4.75" transform="translate(-219.33 175.96) rotate(-45)" />
+                    <rect x="100.37" y="356.72" width="4.75" height="3" transform="translate(-223.2 177.56) rotate(-45)" />
+                    <rect x="105.84" y="351.24" width="4.75" height="3" transform="translate(-217.73 179.83) rotate(-45)" />
+                    <rect x="103.98" y="353.98" width="3" height="3" transform="translate(-220.47 178.71) rotate(-45)" />
+                    <rect x="206.72" y="355.84" width="3" height="4.75" transform="translate(-192.31 252.15) rotate(-45)" />
+                    <rect x="201.24" y="350.37" width="3" height="4.75" transform="translate(-190.04 246.67) rotate(-45)" />
+                    <rect x="205.84" y="351.24" width="4.75" height="3" transform="translate(-188.44 250.55) rotate(-45)" />
+                    <rect x="200.37" y="356.72" width="4.75" height="3" transform="translate(-193.91 248.26) rotate(-45)" />
+                    <rect x="203.98" y="353.98" width="3" height="3" transform="translate(-191.18 249.42) rotate(-45)" />
+                    <rect x="301.24" y="350.37" width="3" height="4.75" transform="translate(-160.75 317.38) rotate(-45)" />
+                    <rect x="306.72" y="355.84" width="3" height="4.75" transform="translate(-163.02 322.86) rotate(-45)" />
+                    <rect x="300.37" y="356.72" width="4.75" height="3" transform="translate(-164.63 318.97) rotate(-45)" />
+                    <rect x="305.84" y="351.24" width="4.75" height="3" transform="translate(-159.15 321.26) rotate(-45)" />
+                    <rect x="303.98" y="353.98" width="3" height="3" transform="translate(-161.89 320.13) rotate(-45)" />
+                    <rect x="406.72" y="355.84" width="3" height="4.75" transform="translate(-133.73 393.57) rotate(-45)" />
+                    <rect x="401.24" y="350.37" width="3" height="4.75" transform="translate(-131.46 388.09) rotate(-45)" />
+                    <rect x="405.84" y="351.24" width="4.75" height="3" transform="translate(-129.86 391.97) rotate(-45)" />
+                    <rect x="400.37" y="356.72" width="4.75" height="3" transform="translate(-135.34 389.68) rotate(-45)" />
+                    <rect x="403.98" y="353.98" width="3" height="3" transform="translate(-132.6 390.85) rotate(-45)" />
+                    <rect x="51.24" y="0.37" width="3" height="4.75" transform="translate(13.51 38.09) rotate(-45)" />
+                    <rect x="56.72" y="5.84" width="3" height="4.75" transform="translate(11.24 43.57) rotate(-45)" />
+                    <rect x="55.84" y="1.24" width="4.75" height="3" transform="translate(15.11 41.97) rotate(-45)" />
+                    <rect x="50.37" y="6.72" width="4.75" height="3" transform="translate(9.64 39.7) rotate(-45)" />
+                    <rect x="53.98" y="3.98" width="3" height="3" transform="translate(12.38 40.83) rotate(-45)" />
+                    <rect x="152.24" y="200.37" width="3" height="4.75" transform="translate(-98.33 168.09) rotate(-45)" />
+                    <rect x="157.72" y="205.84" width="3" height="4.75" transform="translate(-100.6 173.57) rotate(-45)" />
+                    <rect x="151.37" y="206.72" width="4.75" height="3" transform="translate(-102.2 169.69) rotate(-45)" />
+                    <rect x="156.84" y="201.24" width="4.75" height="3" transform="translate(-96.72 171.95) rotate(-45)" />
+                    <rect x="154.98" y="203.98" width="3" height="3" transform="translate(-99.46 170.83) rotate(-45)" />
+                    <rect x="256.72" y="205.84" width="3" height="4.75" transform="translate(-71.6 243.57) rotate(-45)" />
+                    <rect x="251.24" y="200.37" width="3" height="4.75" transform="translate(-69.33 238.09) rotate(-45)" />
+                    <rect x="250.37" y="206.72" width="4.75" height="3" transform="translate(-73.21 239.69) rotate(-45)" />
+                    <rect x="255.84" y="201.24" width="4.75" height="3" transform="translate(-67.73 241.97) rotate(-45)" />
+                    <rect x="253.98" y="203.98" width="3" height="3" transform="translate(-70.47 240.84) rotate(-45)" />
+                    <rect x="350.24" y="200.37" width="3" height="4.75" transform="translate(-40.34 308.1) rotate(-45)" />
+                    <rect x="355.72" y="205.84" width="3" height="4.75" transform="translate(-42.6 313.57) rotate(-45)" />
+                    <rect x="354.84" y="201.24" width="4.75" height="3" transform="translate(-38.73 311.97) rotate(-45)" />
+                    <rect x="349.37" y="206.72" width="4.75" height="3" transform="translate(-44.21 309.69) rotate(-45)" />
+                    <rect x="352.98" y="203.98" width="3" height="3" transform="translate(-41.47 310.85) rotate(-45)" />
+                    <rect x="51.24" y="200.37" width="3" height="4.75" transform="translate(-127.91 96.67) rotate(-45)" />
+                    <rect x="56.72" y="205.84" width="3" height="4.75" transform="translate(-130.18 102.15) rotate(-45)" />
+                    <rect x="50.37" y="206.72" width="4.75" height="3" transform="translate(-131.78 98.27) rotate(-45)" />
+                    <rect x="55.84" y="201.24" width="4.75" height="3" transform="translate(-126.31 100.55) rotate(-45)" />
+                    <rect x="53.98" y="203.98" width="3" height="3" transform="translate(-129.05 99.42) rotate(-45)" />
+                    <rect x="152.24" y="300.37" width="3" height="4.75" transform="translate(-169.04 197.38) rotate(-45)" />
+                    <rect x="157.72" y="305.84" width="3" height="4.75" transform="translate(-171.31 202.86) rotate(-45)" />
+                    <rect x="156.84" y="301.24" width="4.75" height="3" transform="translate(-167.43 201.24) rotate(-45)" />
+                    <rect x="151.37" y="306.72" width="4.75" height="3" transform="translate(-172.91 198.98) rotate(-45)" />
+                    <rect x="154.98" y="303.98" width="3" height="3" transform="translate(-170.17 200.12) rotate(-45)" />
+                    <rect x="256.72" y="305.84" width="3" height="4.75" transform="translate(-142.31 272.86) rotate(-45)" />
+                    <rect x="251.24" y="300.37" width="3" height="4.75" transform="translate(-140.04 267.38) rotate(-45)" />
+                    <rect x="250.37" y="306.72" width="4.75" height="3" transform="translate(-143.91 268.98) rotate(-45)" />
+                    <rect x="255.84" y="301.24" width="4.75" height="3" transform="translate(-138.44 271.26) rotate(-45)" />
+                    <rect x="253.98" y="303.98" width="3" height="3" transform="translate(-141.18 270.13) rotate(-45)" />
+                    <rect x="355.72" y="305.84" width="3" height="4.75" transform="translate(-113.32 342.86) rotate(-45)" />
+                    <rect x="350.24" y="300.37" width="3" height="4.75" transform="translate(-111.05 337.39) rotate(-45)" />
+                    <rect x="349.37" y="306.72" width="4.75" height="3" transform="translate(-114.92 338.98) rotate(-45)" />
+                    <rect x="354.84" y="301.24" width="4.75" height="3" transform="translate(-109.44 341.26) rotate(-45)" />
+                    <rect x="352.98" y="303.98" width="3" height="3" transform="translate(-112.18 340.14) rotate(-45)" />
+                    <rect x="56.72" y="305.84" width="3" height="4.75" transform="translate(-200.89 131.44) rotate(-45)" />
+                    <rect x="51.24" y="300.37" width="3" height="4.75" transform="translate(-198.62 125.96) rotate(-45)" />
+                    <rect x="55.84" y="301.24" width="4.75" height="3" transform="translate(-197.02 129.83) rotate(-45)" />
+                    <rect x="50.37" y="306.72" width="4.75" height="3" transform="translate(-202.49 127.56) rotate(-45)" />
+                    <rect x="53.98" y="303.98" width="3" height="3" transform="translate(-199.76 128.71) rotate(-45)" />
+                    <rect x="157.72" y="405.84" width="3" height="4.75" transform="translate(-242.02 232.15) rotate(-45)" />
+                    <rect x="152.24" y="400.37" width="3" height="4.75" transform="translate(-239.75 226.67) rotate(-45)" />
+                    <rect x="151.37" y="406.72" width="4.75" height="3" transform="translate(-243.62 228.27) rotate(-45)" />
+                    <rect x="156.84" y="401.24" width="4.75" height="3" transform="translate(-238.14 230.52) rotate(-45)" />
+                    <rect x="154.98" y="403.98" width="3" height="3" transform="translate(-240.88 229.41) rotate(-45)" />
+                    <rect x="256.72" y="405.84" width="3" height="4.75" transform="translate(-213.02 302.15) rotate(-45)" />
+                    <rect x="251.24" y="400.37" width="3" height="4.75" transform="translate(-210.75 296.67) rotate(-45)" />
+                    <rect x="250.37" y="406.72" width="4.75" height="3" transform="translate(-214.62 298.26) rotate(-45)" />
+                    <rect x="255.84" y="401.24" width="4.75" height="3" transform="translate(-209.15 300.55) rotate(-45)" />
+                    <rect x="253.98" y="403.98" width="3" height="3" transform="translate(-211.89 299.42) rotate(-45)" />
+                    <rect x="350.24" y="400.37" width="3" height="4.75" transform="translate(-181.76 366.68) rotate(-45)" />
+                    <rect x="355.72" y="405.84" width="3" height="4.75" transform="translate(-184.03 372.15) rotate(-45)" />
+                    <rect x="349.37" y="406.72" width="4.75" height="3" transform="translate(-185.63 368.26) rotate(-45)" />
+                    <rect x="354.84" y="401.24" width="4.75" height="3" transform="translate(-180.15 370.55) rotate(-45)" />
+                    <rect x="352.98" y="403.98" width="3" height="3" transform="translate(-182.89 369.43) rotate(-45)" />
+                    <rect x="51.24" y="400.37" width="3" height="4.75" transform="translate(-269.33 155.25) rotate(-45)" />
+                    <rect x="56.72" y="405.84" width="3" height="4.75" transform="translate(-271.6 160.73) rotate(-45)" />
+                    <rect x="50.37" y="406.72" width="4.75" height="3" transform="translate(-273.2 156.85) rotate(-45)" />
+                    <rect x="55.84" y="401.24" width="4.75" height="3" transform="translate(-267.73 159.12) rotate(-45)" />
+                    <rect x="53.98" y="403.98" width="3" height="3" transform="translate(-270.47 158) rotate(-45)" />
+                  </svg>
+                </span>
+              </div>
+              <!-- /Hightlight One SVG Shape-->
+            </div>
+            <!-- /Highlight One Image Section-->
+
+            <!-- Highlight One Text Section-->
+            <div class="col-12 col-md-6 col-xl-5 offset-xl-1 position-relative" data-aos="fade-in">
+              <div class="position-relative z-index-20">
+                <p class="mb-0 small fw-bolder tracking-wider text-uppercase text-primary">Build together</p>
+                <h4 class="fs-1 fw-bold mb-4 mt-3">We like iterative building to keep you updated.</h4>
+                <p class="text-muted">
+                  We believe in building together through iterative development, constant feedback, and transparency, keeping you involved every step of the way.
+                </p>
+                <a href="#contact" class="btn btn-link px-0 me-3 fw-medium text-decoration-none mt-4" role="button">Let's get started &rarr;</a>
+              </div>
+            </div>
+            <!-- /Highlight One Text Section-->
+          </div>
+        </div>
+        <!-- /Hightlight One-->
+
+        <!-- Highlight Two-->
+        <div class="container py-5 py-lg-8">
+          <div class="row g-5 g-lg-10 d-flex align-items-center flex-row-reverse">
+            <!-- Highlight Two Image Section-->
+            <div class="col-12 col-md-6 col-xl-5 offset-xl-1 position-relative" data-aos="fade-in">
+              <picture class="position-relative z-index-20">
+                <img class="img-fluid rounded-5" src="./assets/images/feature-2.jpeg" alt="HTML Bootstrap Template by Pixel Rocket" />
+              </picture>
+
+              <!-- Hightlight Two SVG Shape-->
+              <div class="d-none d-xl-block f-w-60 position-absolute top-n13 end-n3 opacity-75">
+                <span class="d-block">
+                  <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.39 411.39">
+                    <circle cx="355.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="305.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="355.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="405.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="55.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="305.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="105.89" r="2.5" fill="none" />
+                    <circle cx="205.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="255.89" cy="55.89" r="2.5" fill="none" />
+                    <circle cx="105.89" cy="5.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="205.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="405.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="355.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="255.89" r="2.5" fill="none" />
+                    <circle cx="155.89" cy="155.89" r="2.5" fill="none" />
+                    <circle cx="5.89" cy="105.89" r="2.5" fill="none" />
+                    <path d="M5.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,5.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,5.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,61.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,61.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,53.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,50.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,50.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,58.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,161.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,161.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,153.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,150.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,150.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,158.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,261.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,261.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,253.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,250.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,250.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,258.39Z" fill="#bcbcbc" />
+                    <path d="M55.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,55.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,55.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M155.89,361.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,155.89,361.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,155.89,353.39Z" fill="#bcbcbc" />
+                    <path d="M255.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,255.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,255.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M355.89,350.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,355.89,350.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,355.89,358.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,105.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,105.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,205.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,205.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,305.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,305.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,11.39a5.5,5.5,0,1,0-5.5-5.5A5.5,5.5,0,0,0,405.89,11.39Zm0-8a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,405.89,3.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,100.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,100.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,108.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,208.39Z" />
+                    <path d="M305.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,200.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,200.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,208.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,300.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,300.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,308.39Z" fill="#bcbcbc" />
+                    <path d="M5.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,5.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,5.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M105.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,105.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,105.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M205.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,205.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,205.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M305.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,305.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,305.89,408.39Z" fill="#bcbcbc" />
+                    <path d="M405.89,400.39a5.5,5.5,0,1,0,5.5,5.5A5.51,5.51,0,0,0,405.89,400.39Zm0,8a2.5,2.5,0,1,1,2.5-2.5A2.51,2.51,0,0,1,405.89,408.39Z" fill="#bcbcbc" />
+                    <rect x="152.24" y="100.37" width="3" height="4.75" transform="translate(-27.62 138.8) rotate(-45)" />
+                    <rect x="157.72" y="105.84" width="3" height="4.75" transform="translate(-29.89 144.28) rotate(-45)" />
+                    <rect x="151.37" y="106.72" width="4.75" height="3" transform="translate(-31.49 140.41) rotate(-45)" />
+                    <rect x="156.84" y="101.24" width="4.75" height="3" transform="translate(-26.02 142.67) rotate(-45)" />
+                    <rect x="154.98" y="103.98" width="3" height="3" transform="translate(-28.75 141.54) rotate(-45)" />
+                    <rect x="256.72" y="105.84" width="3" height="4.75" transform="translate(-0.89 214.28) rotate(-45)" />
+                    <rect x="251.24" y="100.37" width="3" height="4.75" transform="translate(1.38 208.8) rotate(-45)" />
+                    <rect x="255.84" y="101.24" width="4.75" height="3" transform="translate(2.98 212.68) rotate(-45)" />
+                    <rect x="250.37" y="106.72" width="4.75" height="3" transform="translate(-2.5 210.4) rotate(-45)" />
+                    <rect x="253.98" y="103.98" width="3" height="3" transform="translate(0.25 211.55) rotate(-45)" />
+                    <rect x="355.72" y="105.84" width="3" height="4.75" transform="translate(28.11 284.29) rotate(-45)" />
+                    <rect x="350.24" y="100.37" width="3" height="4.75" transform="translate(30.37 278.81) rotate(-45)" />
+                    <rect x="354.84" y="101.24" width="4.75" height="3" transform="translate(31.98 282.68) rotate(-45)" />
+                    <rect x="349.37" y="106.72" width="4.75" height="3" transform="translate(26.5 280.4) rotate(-45)" />
+                    <rect x="352.98" y="103.98" width="3" height="3" transform="translate(29.24 281.55) rotate(-45)" />
+                    <rect x="51.24" y="100.37" width="3" height="4.75" transform="translate(-57.2 67.38) rotate(-45)" />
+                    <rect x="56.72" y="105.84" width="3" height="4.75" transform="translate(-59.47 72.86) rotate(-45)" />
+                    <rect x="55.84" y="101.24" width="4.75" height="3" transform="translate(-55.6 71.26) rotate(-45)" />
+                    <rect x="50.37" y="106.72" width="4.75" height="3" transform="translate(-61.07 68.98) rotate(-45)" />
+                    <rect x="53.98" y="103.98" width="3" height="3" transform="translate(-58.34 70.12) rotate(-45)" />
+                    <rect x="152.24" y="0.37" width="3" height="4.75" transform="translate(43.09 109.51) rotate(-45)" />
+                    <rect x="157.72" y="5.84" width="3" height="4.75" transform="translate(40.82 114.99) rotate(-45)" />
+                    <rect x="156.84" y="1.24" width="4.75" height="3" transform="translate(44.7 113.38) rotate(-45)" />
+                    <rect x="151.37" y="6.72" width="4.75" height="3" transform="translate(39.22 111.11) rotate(-45)" />
+                    <rect x="154.98" y="3.98" width="3" height="3" transform="translate(41.96 112.25) rotate(-45)" />
+                    <rect x="251.24" y="0.37" width="3" height="4.75" transform="translate(72.09 179.52) rotate(-45)" />
+                    <rect x="256.72" y="5.84" width="3" height="4.75" transform="translate(69.82 184.99) rotate(-45)" />
+                    <rect x="250.37" y="6.72" width="4.75" height="3" transform="translate(68.21 181.11) rotate(-45)" />
+                    <rect x="255.84" y="1.24" width="4.75" height="3" transform="translate(73.69 183.39) rotate(-45)" />
+                    <rect x="253.98" y="3.98" width="3" height="3" transform="translate(70.96 182.26) rotate(-45)" />
+                    <rect x="350.24" y="0.37" width="3" height="4.75" transform="translate(101.09 249.52) rotate(-45)" />
+                    <rect x="355.72" y="5.84" width="3" height="4.75" transform="translate(98.82 255) rotate(-45)" />
+                    <rect x="349.37" y="6.72" width="4.75" height="3" transform="translate(97.21 251.12) rotate(-45)" />
+                    <rect x="354.84" y="1.24" width="4.75" height="3" transform="translate(102.69 253.39) rotate(-45)" />
+                    <rect x="352.98" y="3.98" width="3" height="3" transform="translate(99.96 252.26) rotate(-45)" />
+                    <rect x="1.24" y="50.37" width="3" height="4.75" transform="translate(-36.49 17.38) rotate(-45)" />
+                    <rect x="6.72" y="55.84" width="3" height="4.75" transform="translate(-38.76 22.86) rotate(-45)" />
+                    <rect x="0.37" y="56.72" width="4.75" height="3" transform="translate(-40.36 18.99) rotate(-45)" />
+                    <rect x="5.84" y="51.24" width="4.75" height="3" transform="translate(-34.89 21.26) rotate(-45)" />
+                    <rect x="3.98" y="53.98" width="3" height="3" transform="translate(-37.62 20.12) rotate(-45)" />
+                    <rect x="101.24" y="50.37" width="3" height="4.75" transform="translate(-7.2 88.09) rotate(-45)" />
+                    <rect x="106.72" y="55.84" width="3" height="4.75" transform="translate(-9.47 93.57) rotate(-45)" />
+                    <rect x="105.84" y="51.24" width="4.75" height="3" transform="translate(-5.6 91.97) rotate(-45)" />
+                    <rect x="100.37" y="56.72" width="4.75" height="3" transform="translate(-11.07 89.69) rotate(-45)" />
+                    <rect x="103.98" y="53.98" width="3" height="3" transform="translate(-8.33 90.84) rotate(-45)" />
+                    <rect x="206.72" y="55.84" width="3" height="4.75" transform="translate(19.82 164.28) rotate(-45)" />
+                    <rect x="201.24" y="50.37" width="3" height="4.75" transform="translate(22.09 158.8) rotate(-45)" />
+                    <rect x="200.37" y="56.72" width="4.75" height="3" transform="translate(18.21 160.4) rotate(-45)" />
+                    <rect x="205.84" y="51.24" width="4.75" height="3" transform="translate(23.69 162.68) rotate(-45)" />
+                    <rect x="203.98" y="53.98" width="3" height="3" transform="translate(20.96 161.55) rotate(-45)" />
+                    <rect x="301.24" y="50.37" width="3" height="4.75" transform="translate(51.38 229.52) rotate(-45)" />
+                    <rect x="306.72" y="55.84" width="3" height="4.75" transform="translate(49.11 234.99) rotate(-45)" />
+                    <rect x="300.37" y="56.72" width="4.75" height="3" transform="translate(47.5 231.11) rotate(-45)" />
+                    <rect x="305.84" y="51.24" width="4.75" height="3" transform="translate(52.98 233.39) rotate(-45)" />
+                    <rect x="303.98" y="53.98" width="3" height="3" transform="translate(50.25 232.26) rotate(-45)" />
+                    <rect x="406.72" y="55.84" width="3" height="4.75" transform="translate(78.4 305.7) rotate(-45)" />
+                    <rect x="401.24" y="50.37" width="3" height="4.75" transform="translate(80.67 300.23) rotate(-45)" />
+                    <rect x="400.37" y="56.72" width="4.75" height="3" transform="translate(76.79 301.82) rotate(-45)" />
+                    <rect x="405.84" y="51.24" width="4.75" height="3" transform="translate(82.27 304.1) rotate(-45)" />
+                    <rect x="403.98" y="53.98" width="3" height="3" transform="translate(79.54 302.97) rotate(-45)" />
+                    <rect x="1.24" y="150.37" width="3" height="4.75" transform="translate(-107.2 46.67) rotate(-45)" />
+                    <rect x="6.72" y="155.84" width="3" height="4.75" transform="translate(-109.47 52.15) rotate(-45)" />
+                    <rect x="0.37" y="156.72" width="4.75" height="3" transform="translate(-111.07 48.27) rotate(-45)" />
+                    <rect x="5.84" y="151.24" width="4.75" height="3" transform="translate(-105.6 50.55) rotate(-45)" />
+                    <rect x="3.98" y="153.98" width="3" height="3" transform="translate(-108.34 49.41) rotate(-45)" />
+                    <rect x="101.24" y="150.37" width="3" height="4.75" transform="translate(-77.91 117.38) rotate(-45)" />
+                    <rect x="106.72" y="155.84" width="3" height="4.75" transform="translate(-80.18 122.86) rotate(-45)" />
+                    <rect x="100.37" y="156.72" width="4.75" height="3" transform="translate(-81.78 118.98) rotate(-45)" />
+                    <rect x="105.84" y="151.24" width="4.75" height="3" transform="translate(-76.31 121.26) rotate(-45)" />
+                    <rect x="103.98" y="153.98" width="3" height="3" transform="translate(-79.05 120.13) rotate(-45)" />
+                    <rect x="206.72" y="155.84" width="3" height="4.75" transform="translate(-50.89 193.57) rotate(-45)" />
+                    <rect x="201.24" y="150.37" width="3" height="4.75" transform="translate(-48.62 188.09) rotate(-45)" />
+                    <rect x="200.37" y="156.72" width="4.75" height="3" transform="translate(-52.5 189.69) rotate(-45)" />
+                    <rect x="205.84" y="151.24" width="4.75" height="3" transform="translate(-47.02 191.97) rotate(-45)" />
+                    <rect x="203.98" y="153.98" width="3" height="3" transform="translate(-49.76 190.84) rotate(-45)" />
+                    <rect x="306.72" y="155.84" width="3" height="4.75" transform="translate(-21.6 264.28) rotate(-45)" />
+                    <rect x="301.24" y="150.37" width="3" height="4.75" transform="translate(-19.33 258.8) rotate(-45)" />
+                    <rect x="305.84" y="151.24" width="4.75" height="3" transform="translate(-17.73 262.68) rotate(-45)" />
+                    <rect x="300.37" y="156.72" width="4.75" height="3" transform="translate(-23.21 260.4) rotate(-45)" />
+                    <rect x="303.98" y="153.98" width="3" height="3" transform="translate(-20.46 261.55) rotate(-45)" />
+                    <rect x="406.72" y="155.84" width="3" height="4.75" transform="translate(7.69 334.99) rotate(-45)" />
+                    <rect x="401.24" y="150.37" width="3" height="4.75" transform="translate(9.96 329.52) rotate(-45)" />
+                    <rect x="400.37" y="156.72" width="4.75" height="3" transform="translate(6.08 331.11) rotate(-45)" />
+                    <rect x="405.84" y="151.24" width="4.75" height="3" transform="translate(11.56 333.39) rotate(-45)" />
+                    <rect x="403.98" y="153.98" width="3" height="3" transform="translate(8.83 332.26) rotate(-45)" />
+                    <rect x="1.24" y="250.37" width="3" height="4.75" transform="translate(-177.91 75.96) rotate(-45)" />
+                    <rect x="6.72" y="255.84" width="3" height="4.75" transform="translate(-180.18 81.44) rotate(-45)" />
+                    <rect x="5.84" y="251.24" width="4.75" height="3" transform="translate(-176.31 79.83) rotate(-45)" />
+                    <rect x="0.37" y="256.72" width="4.75" height="3" transform="translate(-181.78 77.56) rotate(-45)" />
+                    <rect x="3.98" y="253.98" width="3" height="3" transform="translate(-179.05 78.7) rotate(-45)" />
+                    <rect x="101.24" y="250.37" width="3" height="4.75" transform="translate(-148.62 146.67) rotate(-45)" />
+                    <rect x="106.72" y="255.84" width="3" height="4.75" transform="translate(-150.89 152.15) rotate(-45)" />
+                    <rect x="105.84" y="251.24" width="4.75" height="3" transform="translate(-147.02 150.55) rotate(-45)" />
+                    <rect x="100.37" y="256.72" width="4.75" height="3" transform="translate(-152.49 148.27) rotate(-45)" />
+                    <rect x="103.98" y="253.98" width="3" height="3" transform="translate(-149.76 149.42) rotate(-45)" />
+                    <rect x="201.24" y="250.37" width="3" height="4.75" transform="translate(-119.33 217.38) rotate(-45)" />
+                    <rect x="206.72" y="255.84" width="3" height="4.75" transform="translate(-121.6 222.86) rotate(-45)" />
+                    <rect x="200.37" y="256.72" width="4.75" height="3" transform="translate(-123.2 218.98) rotate(-45)" />
+                    <rect x="205.84" y="251.24" width="4.75" height="3" transform="translate(-117.73 221.26) rotate(-45)" />
+                    <rect x="203.98" y="253.98" width="3" height="3" transform="translate(-120.47 220.13) rotate(-45)" />
+                    <rect x="301.24" y="250.37" width="3" height="4.75" transform="translate(-90.04 288.09) rotate(-45)" />
+                    <rect x="306.72" y="255.84" width="3" height="4.75" transform="translate(-92.31 293.57) rotate(-45)" />
+                    <rect x="305.84" y="251.24" width="4.75" height="3" transform="translate(-88.44 291.97) rotate(-45)" />
+                    <rect x="300.37" y="256.72" width="4.75" height="3" transform="translate(-93.92 289.69) rotate(-45)" />
+                    <rect x="303.98" y="253.98" width="3" height="3" transform="translate(-91.18 290.84) rotate(-45)" />
+                    <rect x="401.24" y="250.37" width="3" height="4.75" transform="translate(-60.75 358.8) rotate(-45)" />
+                    <rect x="406.72" y="255.84" width="3" height="4.75" transform="translate(-63.02 364.28) rotate(-45)" />
+                    <rect x="400.37" y="256.72" width="4.75" height="3" transform="translate(-64.63 360.39) rotate(-45)" />
+                    <rect x="405.84" y="251.24" width="4.75" height="3" transform="translate(-59.15 362.68) rotate(-45)" />
+                    <rect x="403.98" y="253.98" width="3" height="3" transform="translate(-61.89 361.55) rotate(-45)" />
+                    <rect x="6.72" y="355.84" width="3" height="4.75" transform="translate(-250.89 110.73) rotate(-45)" />
+                    <rect x="1.24" y="350.37" width="3" height="4.75" transform="translate(-248.62 105.25) rotate(-45)" />
+                    <rect x="0.37" y="356.72" width="4.75" height="3" transform="translate(-252.49 106.85) rotate(-45)" />
+                    <rect x="5.84" y="351.24" width="4.75" height="3" transform="translate(-247.02 109.12) rotate(-45)" />
+                    <rect x="3.98" y="353.98" width="3" height="3" transform="translate(-249.76 108) rotate(-45)" />
+                    <rect x="106.72" y="355.84" width="3" height="4.75" transform="translate(-221.6 181.44) rotate(-45)" />
+                    <rect x="101.24" y="350.37" width="3" height="4.75" transform="translate(-219.33 175.96) rotate(-45)" />
+                    <rect x="100.37" y="356.72" width="4.75" height="3" transform="translate(-223.2 177.56) rotate(-45)" />
+                    <rect x="105.84" y="351.24" width="4.75" height="3" transform="translate(-217.73 179.83) rotate(-45)" />
+                    <rect x="103.98" y="353.98" width="3" height="3" transform="translate(-220.47 178.71) rotate(-45)" />
+                    <rect x="206.72" y="355.84" width="3" height="4.75" transform="translate(-192.31 252.15) rotate(-45)" />
+                    <rect x="201.24" y="350.37" width="3" height="4.75" transform="translate(-190.04 246.67) rotate(-45)" />
+                    <rect x="205.84" y="351.24" width="4.75" height="3" transform="translate(-188.44 250.55) rotate(-45)" />
+                    <rect x="200.37" y="356.72" width="4.75" height="3" transform="translate(-193.91 248.26) rotate(-45)" />
+                    <rect x="203.98" y="353.98" width="3" height="3" transform="translate(-191.18 249.42) rotate(-45)" />
+                    <rect x="301.24" y="350.37" width="3" height="4.75" transform="translate(-160.75 317.38) rotate(-45)" />
+                    <rect x="306.72" y="355.84" width="3" height="4.75" transform="translate(-163.02 322.86) rotate(-45)" />
+                    <rect x="300.37" y="356.72" width="4.75" height="3" transform="translate(-164.63 318.97) rotate(-45)" />
+                    <rect x="305.84" y="351.24" width="4.75" height="3" transform="translate(-159.15 321.26) rotate(-45)" />
+                    <rect x="303.98" y="353.98" width="3" height="3" transform="translate(-161.89 320.13) rotate(-45)" />
+                    <rect x="406.72" y="355.84" width="3" height="4.75" transform="translate(-133.73 393.57) rotate(-45)" />
+                    <rect x="401.24" y="350.37" width="3" height="4.75" transform="translate(-131.46 388.09) rotate(-45)" />
+                    <rect x="405.84" y="351.24" width="4.75" height="3" transform="translate(-129.86 391.97) rotate(-45)" />
+                    <rect x="400.37" y="356.72" width="4.75" height="3" transform="translate(-135.34 389.68) rotate(-45)" />
+                    <rect x="403.98" y="353.98" width="3" height="3" transform="translate(-132.6 390.85) rotate(-45)" />
+                    <rect x="51.24" y="0.37" width="3" height="4.75" transform="translate(13.51 38.09) rotate(-45)" />
+                    <rect x="56.72" y="5.84" width="3" height="4.75" transform="translate(11.24 43.57) rotate(-45)" />
+                    <rect x="55.84" y="1.24" width="4.75" height="3" transform="translate(15.11 41.97) rotate(-45)" />
+                    <rect x="50.37" y="6.72" width="4.75" height="3" transform="translate(9.64 39.7) rotate(-45)" />
+                    <rect x="53.98" y="3.98" width="3" height="3" transform="translate(12.38 40.83) rotate(-45)" />
+                    <rect x="152.24" y="200.37" width="3" height="4.75" transform="translate(-98.33 168.09) rotate(-45)" />
+                    <rect x="157.72" y="205.84" width="3" height="4.75" transform="translate(-100.6 173.57) rotate(-45)" />
+                    <rect x="151.37" y="206.72" width="4.75" height="3" transform="translate(-102.2 169.69) rotate(-45)" />
+                    <rect x="156.84" y="201.24" width="4.75" height="3" transform="translate(-96.72 171.95) rotate(-45)" />
+                    <rect x="154.98" y="203.98" width="3" height="3" transform="translate(-99.46 170.83) rotate(-45)" />
+                    <rect x="256.72" y="205.84" width="3" height="4.75" transform="translate(-71.6 243.57) rotate(-45)" />
+                    <rect x="251.24" y="200.37" width="3" height="4.75" transform="translate(-69.33 238.09) rotate(-45)" />
+                    <rect x="250.37" y="206.72" width="4.75" height="3" transform="translate(-73.21 239.69) rotate(-45)" />
+                    <rect x="255.84" y="201.24" width="4.75" height="3" transform="translate(-67.73 241.97) rotate(-45)" />
+                    <rect x="253.98" y="203.98" width="3" height="3" transform="translate(-70.47 240.84) rotate(-45)" />
+                    <rect x="350.24" y="200.37" width="3" height="4.75" transform="translate(-40.34 308.1) rotate(-45)" />
+                    <rect x="355.72" y="205.84" width="3" height="4.75" transform="translate(-42.6 313.57) rotate(-45)" />
+                    <rect x="354.84" y="201.24" width="4.75" height="3" transform="translate(-38.73 311.97) rotate(-45)" />
+                    <rect x="349.37" y="206.72" width="4.75" height="3" transform="translate(-44.21 309.69) rotate(-45)" />
+                    <rect x="352.98" y="203.98" width="3" height="3" transform="translate(-41.47 310.85) rotate(-45)" />
+                    <rect x="51.24" y="200.37" width="3" height="4.75" transform="translate(-127.91 96.67) rotate(-45)" />
+                    <rect x="56.72" y="205.84" width="3" height="4.75" transform="translate(-130.18 102.15) rotate(-45)" />
+                    <rect x="50.37" y="206.72" width="4.75" height="3" transform="translate(-131.78 98.27) rotate(-45)" />
+                    <rect x="55.84" y="201.24" width="4.75" height="3" transform="translate(-126.31 100.55) rotate(-45)" />
+                    <rect x="53.98" y="203.98" width="3" height="3" transform="translate(-129.05 99.42) rotate(-45)" />
+                    <rect x="152.24" y="300.37" width="3" height="4.75" transform="translate(-169.04 197.38) rotate(-45)" />
+                    <rect x="157.72" y="305.84" width="3" height="4.75" transform="translate(-171.31 202.86) rotate(-45)" />
+                    <rect x="156.84" y="301.24" width="4.75" height="3" transform="translate(-167.43 201.24) rotate(-45)" />
+                    <rect x="151.37" y="306.72" width="4.75" height="3" transform="translate(-172.91 198.98) rotate(-45)" />
+                    <rect x="154.98" y="303.98" width="3" height="3" transform="translate(-170.17 200.12) rotate(-45)" />
+                    <rect x="256.72" y="305.84" width="3" height="4.75" transform="translate(-142.31 272.86) rotate(-45)" />
+                    <rect x="251.24" y="300.37" width="3" height="4.75" transform="translate(-140.04 267.38) rotate(-45)" />
+                    <rect x="250.37" y="306.72" width="4.75" height="3" transform="translate(-143.91 268.98) rotate(-45)" />
+                    <rect x="255.84" y="301.24" width="4.75" height="3" transform="translate(-138.44 271.26) rotate(-45)" />
+                    <rect x="253.98" y="303.98" width="3" height="3" transform="translate(-141.18 270.13) rotate(-45)" />
+                    <rect x="355.72" y="305.84" width="3" height="4.75" transform="translate(-113.32 342.86) rotate(-45)" />
+                    <rect x="350.24" y="300.37" width="3" height="4.75" transform="translate(-111.05 337.39) rotate(-45)" />
+                    <rect x="349.37" y="306.72" width="4.75" height="3" transform="translate(-114.92 338.98) rotate(-45)" />
+                    <rect x="354.84" y="301.24" width="4.75" height="3" transform="translate(-109.44 341.26) rotate(-45)" />
+                    <rect x="352.98" y="303.98" width="3" height="3" transform="translate(-112.18 340.14) rotate(-45)" />
+                    <rect x="56.72" y="305.84" width="3" height="4.75" transform="translate(-200.89 131.44) rotate(-45)" />
+                    <rect x="51.24" y="300.37" width="3" height="4.75" transform="translate(-198.62 125.96) rotate(-45)" />
+                    <rect x="55.84" y="301.24" width="4.75" height="3" transform="translate(-197.02 129.83) rotate(-45)" />
+                    <rect x="50.37" y="306.72" width="4.75" height="3" transform="translate(-202.49 127.56) rotate(-45)" />
+                    <rect x="53.98" y="303.98" width="3" height="3" transform="translate(-199.76 128.71) rotate(-45)" />
+                    <rect x="157.72" y="405.84" width="3" height="4.75" transform="translate(-242.02 232.15) rotate(-45)" />
+                    <rect x="152.24" y="400.37" width="3" height="4.75" transform="translate(-239.75 226.67) rotate(-45)" />
+                    <rect x="151.37" y="406.72" width="4.75" height="3" transform="translate(-243.62 228.27) rotate(-45)" />
+                    <rect x="156.84" y="401.24" width="4.75" height="3" transform="translate(-238.14 230.52) rotate(-45)" />
+                    <rect x="154.98" y="403.98" width="3" height="3" transform="translate(-240.88 229.41) rotate(-45)" />
+                    <rect x="256.72" y="405.84" width="3" height="4.75" transform="translate(-213.02 302.15) rotate(-45)" />
+                    <rect x="251.24" y="400.37" width="3" height="4.75" transform="translate(-210.75 296.67) rotate(-45)" />
+                    <rect x="250.37" y="406.72" width="4.75" height="3" transform="translate(-214.62 298.26) rotate(-45)" />
+                    <rect x="255.84" y="401.24" width="4.75" height="3" transform="translate(-209.15 300.55) rotate(-45)" />
+                    <rect x="253.98" y="403.98" width="3" height="3" transform="translate(-211.89 299.42) rotate(-45)" />
+                    <rect x="350.24" y="400.37" width="3" height="4.75" transform="translate(-181.76 366.68) rotate(-45)" />
+                    <rect x="355.72" y="405.84" width="3" height="4.75" transform="translate(-184.03 372.15) rotate(-45)" />
+                    <rect x="349.37" y="406.72" width="4.75" height="3" transform="translate(-185.63 368.26) rotate(-45)" />
+                    <rect x="354.84" y="401.24" width="4.75" height="3" transform="translate(-180.15 370.55) rotate(-45)" />
+                    <rect x="352.98" y="403.98" width="3" height="3" transform="translate(-182.89 369.43) rotate(-45)" />
+                    <rect x="51.24" y="400.37" width="3" height="4.75" transform="translate(-269.33 155.25) rotate(-45)" />
+                    <rect x="56.72" y="405.84" width="3" height="4.75" transform="translate(-271.6 160.73) rotate(-45)" />
+                    <rect x="50.37" y="406.72" width="4.75" height="3" transform="translate(-273.2 156.85) rotate(-45)" />
+                    <rect x="55.84" y="401.24" width="4.75" height="3" transform="translate(-267.73 159.12) rotate(-45)" />
+                    <rect x="53.98" y="403.98" width="3" height="3" transform="translate(-270.47 158) rotate(-45)" />
+                  </svg>
+                </span>
+              </div>
+              <!-- /Hightlight Two SVG Shape-->
+
+              <div class="position-absolute bottom-3 start-5 z-index-30 d-none d-lg-block" data-aos="fade-in" data-aos-duration="350" data-aos-delay="200">
+                <div class="p-3 bg-white shadow-lg rounded-3 f-w-16 mb-3">
+                  <picture class="position-relative z-index-0">
+                    <img class="img-fluid" src="./assets/images/icons/diamond.svg" alt="HTML Bootstrap Template by Pixel Rocket" />
+                  </picture>
+                </div>
+                <div class="p-3 bg-white shadow-lg rounded-3 f-w-16 mb-3">
+                  <picture class="position-relative z-index-0">
+                    <img class="img-fluid" src="./assets/images/icons/build.svg" alt="HTML Bootstrap Template by Pixel Rocket" />
+                  </picture>
+                </div>
+                <div class="px-3 py-2 bg-primary shadow-lg rounded-3 f-w-16 mb-3">
+                  <span class="fs-3">👍</span>
+                </div>
+              </div>
+            </div>
+            <!-- /Highlight Two Image Section-->
+
+            <!-- Highlight Two Text Section-->
+            <div class="col-12 col-md-6 col-xl-5 offset-xl-1 position-relative" data-aos="fade-in">
+              <div class="text-start text-lg-end">
+                <p class="mb-0 small fw-bolder tracking-wider text-uppercase text-orange">Build smarter</p>
+                <h4 class="fs-1 fw-bold mb-4 mt-3">Your business is unique, so your solutions should be too.</h4>
+                <p class="text-muted">
+                  We don’t believe in one-size-fits-all automation. Every workflow, every integration, and every feature is crafted to fit your exact needs, ensuring maximum
+                  efficiency and impact.
+                </p>
+                <a href="#contact" class="btn btn-link px-0 me-3 fw-medium text-orange text-decoration-none mt-4" role="button">Let's get started &rarr;</a>
+              </div>
+            </div>
+            <!-- /Highlight Two Text Section-->
+          </div>
+        </div>
+        <!-- /Hightlight Two-->
+      </div>
+      <!-- /Methods-->
+
+      <!-- Customer Reviews-->
+      <!-- <div class="pb-10">
+        <div class="container">
+          <p class="mb-3 small fw-bolder tracking-wider text-uppercase text-primary text-center">Our Feedback</p>
+          <h4 class="fs-1 fw-bold mb-6 text-center col-12 col-sm-6 col-md-5 col-lg-6 col-xl-4 mx-auto">What our customers are saying about us</h4>
+          <div class="mt-3 d-flex justify-content-center flex-column flex-md-row">
+            <a href="#" class="btn btn-primary mb-2 mb-md-0" role="button">Ready to get started?</a>
+            <a href="#" class="btn btn-link text-decoration-none text-muted ms-md-2 bg-light-hover" role="button">Start your free trial</a>
+          </div>
+        </div>
+        <div class="mt-5">
+          <section class="marquee marquee-hover-pause">
+            <div class="marquee-body">
+              <div class="marquee-section animation-marquee-200 py-3">
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Just amazed at how easy to use Sigma is. Really saved us a heap of time.</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-2.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Joe Smithy</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-15.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">What a great way to shave days off our next product launch!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-3.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Patrick Johnson</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-16.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Spent a lot of time using Sigma the past few weeks...love it!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-4.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Sally Klein</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-17.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">This is great value for money when you factor in the time saved</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-5.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Rohit Sharma</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-18.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Still amazed at how easy to use Sigma is...just great.</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-6.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Jeff Waite</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-19.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Signed up last week - blown away at how easy it was to build our first landing page</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-7.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Kinsta Troy</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-20.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">The one-click integration with our hosting company is a life-saver</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-2.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Fred Couples</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-21.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Hooked. Can&#x27;t live without it now!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Sam Nelson</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-22.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="marquee-section animation-marquee-200 py-3">
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Just amazed at how easy to use Sigma is. Really saved us a heap of time.</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-2.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Joe Smithy</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-15.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">What a great way to shave days off our next product launch!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-3.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Patrick Johnson</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-16.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Spent a lot of time using Sigma the past few weeks...love it!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-4.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Sally Klein</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-17.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">This is great value for money when you factor in the time saved</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-5.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Rohit Sharma</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-18.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Still amazed at how easy to use Sigma is...just great.</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-6.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Jeff Waite</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-19.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Signed up last week - blown away at how easy it was to build our first landing page</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-7.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Kinsta Troy</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-20.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">The one-click integration with our hosting company is a life-saver</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small-2.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Fred Couples</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-21.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="rounded shadow-sm border f-w-76 d-flex flex-wrap flex-column px-5 pb-5 pt-7 mx-4 text-wrap position-relative h-100">
+                  <i class="ri-double-quotes-l position-absolute top-n1 start-2 ri-2x opacity-10"></i>
+                  <p class="mb-2 fw-medium fs-6">Hooked. Can&#x27;t live without it now!</p>
+                  <div class="d-flex align-items-center mt-2">
+                    <picture>
+                      <img class="f-w-10 rounded-circle" src="./assets/images/profile-small.jpeg" alt="" />
+                    </picture>
+                    <span class="d-block text-muted fs-7 ms-3">Sam Nelson</span>
+                  </div>
+                  <div class="mt-4 f-w-20">
+                    <picture>
+                      <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-22.svg" alt="" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div> -->
+      <!-- /Customer Reviews-->
+
+      <!-- Latest Blog Posts-->
+      <div class="bg-primary py-10" id="blog">
+        <div class="container">
+          <h4 class="fs-1 fw-bold mb-6 text-white text-center">Our latest articles</h4>
+
+          <div class="row g-5">
+            <!-- Blog Post-->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="d-flex h-100 bg-white rounded card overflow-hidden shadow-lg position-relative hover-lift">
+                <picture>
+                  <img class="img-fluid" src="./assets/images/blog-two.jpeg" alt="" />
+                </picture>
+
+                <div class="card-body p-4 p-lg-5">
+                  <p class="card-title fw-medium mb-4">Essentials of Managing Software Development: Enhancing Collaboration Between PMs and Developers</p>
+                  <a
+                    href="https://medium.com/@tamas.kereszturi1/essentials-of-managing-software-development-enhancing-collaboration-between-pms-and-developers-e6fae6005e20"
+                    target="_blank"
+                    class="fw-medium fs-7 text-decoration-none link-cover"
+                    target="_blank"
+                    >Read more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- / Blog Post-->
+            <!-- Blog Post-->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="d-flex h-100 bg-white rounded card overflow-hidden shadow-lg position-relative hover-lift">
+                <picture>
+                  <img class="img-fluid" src="./assets/images/blog-four.webp" alt="" />
+                </picture>
+
+                <div class="card-body p-4 p-lg-5">
+                  <p class="card-title fw-medium mb-4">Mastering the Basics of Business Process Automation: The First Steps</p>
+                  <a
+                    href="https://medium.com/@tamas.kereszturi1/mastering-the-basics-of-business-process-automation-the-first-steps-d3d7e8b76abd"
+                    target="_blank"
+                    class="fw-medium fs-7 text-decoration-none link-cover"
+                    target="_blank"
+                    >Read more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- / Blog Post-->
+            <!-- Blog Post-->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="d-flex h-100 bg-white rounded card overflow-hidden shadow-lg position-relative hover-lift">
+                <picture>
+                  <img class="img-fluid" src="./assets/images/blog-three.jpeg" alt="" />
+                </picture>
+
+                <div class="card-body p-4 p-lg-5">
+                  <p class="card-title fw-medium mb-4">Pursuing Simplicity in Software Development</p>
+                  <a
+                    href="https://medium.com/@tamas.kereszturi1/pursuing-simplicity-in-software-development-93cac5f8b250"
+                    target="_blank"
+                    class="fw-medium fs-7 text-decoration-none link-cover"
+                    target="_blank"
+                    >Read more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- / Blog Post-->
+          </div>
+
+          <a href="https://medium.com/@tamas.kereszturi1" class="btn btn-white mx-auto mt-7 d-table fw-medium w-100 w-md-auto" target="_blank">More articles &rarr;</a>
+        </div>
+      </div>
+      <!-- / Latest Blog Posts-->
+
+      <!-- How can we help-->
+      <div class="py-10" id="services">
+        <div class="container">
+          <h4 class="fs-1 fw-bold mb-3 text-center">How can we help</h4>
+          <p class="text-muted text-center">Check how we can help you build your new digital powerhouse.</p>
+          <div class="row gx-10 gy-7 mt-4">
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path opacity=".4" d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line opacity=".4" x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">Workflow automation</p>
+              <span class="text-muted fs-7">We build automations to perform a task automatically. Doesn't matter if you need automatic billing, reporting or data syncing.</span>
+            </div>
+            <!-- / Feature-->
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect opacity=".3" x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">AI Agents</p>
+              <span class="text-muted fs-7"
+                >Your AI-powered assistants, working 24/7 to handle tasks, make decisions, and keep your workflows running—so you don’t have to. Automate smarter, scale faster, and
+                stay in control with AI agents that think, act, and execute like a pro.</span
+              >
+            </div>
+            <!-- / Feature-->
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline opacity=".4" points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">Software development</p>
+              <span class="text-muted fs-7"
+                >From idea to execution—custom software built to fit your exact needs. Whether you need automation, AI-driven solutions, or scalable web apps, we craft powerful,
+                efficient, and tailored software that helps your business thrive.</span
+              >
+            </div>
+            <!-- / Feature-->
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path>
+                  <polyline opacity=".4" points="13 11 9 17 15 17 11 23"></polyline>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">No-code</p>
+              <span class="text-muted fs-7"
+                >Build faster, launch smarter—no-code solutions that empower you to automate workflows, create apps, and streamline operations without writing a single line of
+                code. Get the power of custom software, minus the complexity.</span
+              >
+            </div>
+            <!-- / Feature-->
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path opacity=".4" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path opacity=".4" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">Internal or external tools</p>
+              <span class="text-muted fs-7">You can have a fully customized tool that covers you need. Paid leave planner, CRM or ERP, internal newsletter or more.</span>
+            </div>
+            <!-- / Feature-->
+            <!-- Feature-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
+              <span class="f-w-8 d-block text-primary">
+                <svg
+                  class="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle opacity=".4" cx="12" cy="12" r="2"></circle>
+                  <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+                </svg>
+              </span>
+              <p class="fw-medium mb-1 mt-3 fs-5">Trainings and consulting</p>
+              <span class="text-muted fs-7"
+                >Navigate the tech landscape with confidence. From automation to AI, from internal trainging to consulting. We help you choose the right tools, optimize workflows,
+                and build smarter company.</span
+              >
+            </div>
+            <!-- / Feature-->
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <div class="p-5 pt-0 mt-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">What we don´t know</span>
-        <h2 class="display-4">There is a lot we don´t know. Here is a small sneak peek</h2>
-      </div>
-      <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract17.webp" width="582" height="390" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
+      <!-- How can we help-->
 
-      <div class="card bg-transparent" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract4.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-</div>
-<div class="bg-dark position-relative">
-  <div class="container px-vw-5 py-vh-5">
-    <div class="row d-flex align-items-center">
-
-      <div class="col-12 col-lg-7">
-        <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/person11.webp" width="512" height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
-      </div>
-      <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
-        <h2 class="display-4">We constantly adding new images to our website. Does it make sense? No!</h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-black">
-<div class="container px-vw-5 py-vh-5">
-  <div class="row d-flex align-items-center">
-    <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
-      <span class="h5 text-secondary fw-lighter">What we charge</span>
-      <h2 class="display-4">You get all our knowledge for one simple price</h2>
-    </div>
-    <div class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
-      <h2 class="display-huge mb-5">
-        <span class="fs-4 me-2 fw-light">$</span><span class="border-bottom border-5">499</span><span class="fs-6 fw-light">/day</span></h2>
-      <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a href="#" class="btn btn-xl btn-light">Sign up
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-</a>
-    </div>
-  </div>
-</div>
-
-</div>
-<div class="container-fluid px-vw-5 position-relative" data-aos="fade">
-<div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
-<div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-image: url(img/webp/abstract12.webp)">
-  <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-  <div class="row d-flex align-items-center">
-
-  <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12">
-    <img src="img/webp/person103.webp" width="684" height="457" alt="our CEO with some nice numbers" class="img-fluid rounded-5" loading="lazy">
-  </div>
-  <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
-    <p class="lead border-bottom pb-4 border-secondary">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-    <p class="text-secondary text-center">Jane Doe, CEO</p>
-</div>
-</div>
-</div>
-  <div class="col-5 offset-1">
-    <span class="h5 text-secondary fw-lighter">The numbers</span>
-    <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+400</h2>
-<p class="h4 fw-lighter text-secondary">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-</p>
-
-<h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">78.981</h2>
-<p class="h4 fw-lighter text-secondary">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-</p>
-<h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">98%</h2>
-<p class="h4 fw-lighter text-secondary">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-</p>
-</div>
-  </div>
-</div>
-
-</div>
-</div>
-<div class="bg-dark py-vh-5">
-<div class="container px-vw-5">
-  <div class="row d-flex gx-5 align-items-center">
-    <div class="col-12 col-lg-6">
-      <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-        </div>
-        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-          <img src="img/webp/person14.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Jane Doemunsky</span><br>
-            <small class="text-secondary">COO, The Boo Corp.</small>
-          </div>
-        </div>
-      </div>
-      <div class="rounded-5 bg-black p-5 shadow mt-5" data-aos="zoom-in-right">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-</svg>
-
-        </div>
-        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-          <img src="img/webp/person13.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Jane Doemunsky</span><br>
-            <small class="text-secondary">COO, The Boo Corp.</small>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="p-5 pt-0" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">What others have to say</span>
-        <h2 class="display-4">Invidunt ut labore et dolore magna aliquyam erat.</h2>
-      </div>
-      <div class="rounded-5 bg-black p-5 shadow mt-5 gradient" data-aos="zoom-in-left">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-        </div>
-        <p class="lead">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top pt-3">
-          <img src="img/webp/person16.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Jane Doemunsky</span><br>
-            <small>COO, The Boo Corp.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
+      <!-- /Page Content -->
     </main>
+    <!-- / Main Section-->
 
-    <footer class="bg-black border-top border-dark">
-  <div class="container py-vh-4 text-secondary fw-lighter">
-    <div class="row">
-      <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
-            <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-  </svg>
-  <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
-</a>
-
+    <!-- Footer -->
+    <!-- Footer-->
+    <footer class="bg-dark pt-10 pb-8" id="contact">
+      <div class="container">
+        <!-- Free trial -->
+        <div class="border-bottom border-white-10 pb-7">
+          <div class="col-12 col-md-8 col-lg-8 d-flex mx-auto flex-column align-items-center justify-content-center">
+            <h2 class="fs-1 fw-bolder text-white text-center">So, when do we start?</h2>
+            <a href="#contact" class="btn btn-primary mt-3 w-100 w-md-auto" role="button">Start now</a>
+          </div>
+        </div>
+        <!-- Free trial-->
       </div>
-      <div class="col border-end border-dark">
-        <span class="h6">Company</span>
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a href="#" class="link-fancy link-fancy-light">About us</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="link-fancy link-fancy-light">Legal</a>
-  </li>
 
-  <li class="nav-item">
-    <a href="#" class="link-fancy link-fancy-light">Career</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="link-fancy link-fancy-light">Contact</a>
-  </li>
-</ul>
+      <!-- Footer Menus-->
+      <div class="container pt-7">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+          <!-- Footer Logo-->
+          <a class="d-flex align-items-center lh-1 text-white transition-opacity opacity-50-hover text-decoration-none mb-4 mb-md-0" href="#">
+            <span class="fw-bold">flownine.</span>
+          </a>
+          <!-- /Footer Logo-->
+
+          <!-- Footer socials-->
+          <ul class="list-unstyled d-flex align-items-center justify-content-end">
+            <li class="ms-5">
+              <a href="mailto:info@flownine.io" class="text-light px-4 mb-4">info@flownine.io</a>
+            </li>
+          </ul>
+          <!-- Footer socials-->
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-start mt-5 mt-lg-7">
+          <!-- Menu-->
+          <div class="w-100 w-sm-50 w-lg-auto mb-4 mb-lg-0 pe-6">
+            <h6 class="text-uppercase fs-xs fw-bolder tracking-wider text-white opacity-50">Products</h6>
+            <ul class="list-unstyled footer-nav">
+              <li>
+                <a href="#">Sidewing AI <span class="badge bg-danger rounded ms-2 align-middle">Coming soon</span></a>
+              </li>
+              <li>
+                <a href="https://www.suitehero.ai">Suitehero <span class="badge bg-primary rounded ms-2 align-middle">beta</span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /Menu-->
+
+          <!-- Menu-->
+          <div class="w-100 w-sm-50 w-lg-auto mb-4 mb-lg-0 pe-6">
+            <h6 class="text-uppercase fs-xs fw-bolder tracking-wider text-white opacity-50">Resources</h6>
+            <ul class="list-unstyled footer-nav">
+              <li><a href="https://www.linkedin.com/in/tamaskereszturi/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://medium.com/@tamas.kereszturi1" target="_blank">Medium</i></a></li>
+            </ul>
+          </div>
+          <!-- /Menu-->
+
+          <!-- Menu-->
+          <div class="w-100 w-sm-50 w-lg-auto mb-4 mb-lg-0">
+            <h6 class="text-uppercase fs-xs fw-bolder tracking-wider text-white opacity-50">Navigation</h6>
+            <ul class="list-unstyled footer-nav">
+              <li><a href="#benefits">Benefits</li>
+              <li><a href="#methods">Methods</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- /Menu-->
+
+          <!-- Menu-->
+          <!-- <div class="w-100 w-sm-50 w-lg-auto mb-4 mb-lg-0 card">
+            <h6 class="text-uppercase fs-xs fw-bolder tracking-wider text-white opacity-50">Contact</h6>
+            <ul class="list-unstyled footer-nav">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Cookie policy</a></li>
+              <li><a href="#">Refund policy</a></li>
+              <li><a href="#">GDPR information</a></li>
+              <li><a href="#">Company legals</a></li>
+            </ul>
+          </div> -->
+          <!-- /Menu-->
+        </div>
       </div>
-      <div class="col border-end border-dark">
-                <span class="h6">Services</span>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Products</a>
-                  </li>
+      <!-- Footer Menus-->
 
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Customers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Success Stories</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">More</a>
-                  </li>
-                </ul>
+      <!-- Footer bottom-->
+      <div class="container">
+        <div class="border-top pt-6 mt-7 border-white-10 d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <span class="small text-white opacity-50 mb-2 mb-md-0">All rights reserved &copy flownine 2025</span>
+          <span class="small text-white opacity-50">Terms of service | Security policy</span>
+        </div>
       </div>
-      <div class="col">
-                <span class="h6">Support</span>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Legal</a>
-                  </li>
+      <!-- Footer bottom-->
+    </footer>
+    <!-- / Footer-->
 
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Career</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Contact</a>
-                  </li>
-                </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container text-center small py-vh-2 border-top border-dark">Made by
-    <a href="https://templatedeck.com" class="link-fancy link-fancy-light" target="_blank">templatedeck.com</a>
-  </div>
-</footer>
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
 
-
-
-
-
-
-
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
-<script>
-AOS.init({
- duration: 800, // values from 0 to 3000, with step 50ms
-});
-</script>
-<script>
-  let scrollpos = window.scrollY
-  const header = document.querySelector(".navbar")
-  const header_height = header.offsetHeight
-
-  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos >= header_height) { add_class_on_scroll() }
-    else { remove_class_on_scroll() }
-
-    console.log(scrollpos)
-  })
-</script>
-
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
   </body>
 </html>
